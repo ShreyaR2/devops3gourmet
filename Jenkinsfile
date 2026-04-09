@@ -7,7 +7,7 @@ pipeline {
             steps {
                 echo '========== STAGE 1: CHECKOUT =========='
                 echo 'Connecting to source code repository...'
-                echo 'Pulling latest code from branch: main'
+                echo 'Pulling latest code from branch: master'
                 echo 'Source code checked out successfully!'
             }
         }
