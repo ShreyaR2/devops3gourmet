@@ -4,22 +4,28 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building project...'
-                sh 'echo Build successful'
+                script {
+                    echo 'Building project...'
+                    sh 'echo Build successful'
+                }
             }
         }
 
         stage('Test') {
             steps {
-                echo 'Running tests...'
-                sh 'echo Tests passed'
+                script {
+                    echo 'Running tests...'
+                    sh 'echo Tests passed'
+                }
             }
         }
 
         stage('Deploy') {
             steps {
-                echo 'Deploying application...'
-                sh 'echo Deployment complete'
+                script {
+                    echo 'Deploying application...'
+                    sh 'echo Deployment complete'
+                }
             }
         }
     }
