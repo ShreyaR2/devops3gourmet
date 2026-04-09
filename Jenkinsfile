@@ -16,7 +16,8 @@ pipeline {
             steps {
                 echo '========== STAGE 2: BUILD =========='
                 echo 'Compiling the Java application...'
-                sh 'javac src/Calculator.java -d out/'
+                sh 'mkdir -p out'
+                sh 'javac src/Calculator.java src/CalculatorTest.java -d out/'
                 echo 'Build successful!'
             }
         }
